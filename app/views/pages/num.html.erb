@@ -1,0 +1,12 @@
+<h1>Guess: <%= @guess%></h1>
+<h1>Cool!!</h1>
+<p><%=@guess%></p>
+	<% if @guess == 36 %>
+		<%= "Right guess!"%>
+	<% elsif @guess < 36 %>
+		<%= "Try a higher number!" %>
+	<%  else %> 
+	<%= "Try a lower number!" %>
+	<% end %>
+
+
